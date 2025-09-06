@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Otimização da Secagem de Cannabis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f7f4;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        .flow-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            min-height: 100px;
+        }
+        .arrow {
+            font-size: 2.5rem;
+            color: #63a6a6;
+            margin: 0 1rem;
+            align-self: center;
+        }
+        @media (max-width: 768px) {
+            .arrow {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#3c787e] mb-2">Otimização da Secagem de Cannabis</h1>
+            <p class="text-lg md:text-xl text-[#63a6a6]">Analisando o Impacto da Temperatura no Teor de Canabinoides</p>
+        </header>
+
+        <main>
+            <section id="introduction" class="mb-12">
+                <div class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto">
+                    <h2 class="text-2xl font-bold text-[#3c787e] mb-4">Por que a Temperatura de Secagem é Crucial?</h2>
+                    <p class="text-base leading-relaxed">
+                        O processo de secagem é uma etapa fundamental pós-colheita que influencia diretamente a qualidade e a potência do produto final. Uma temperatura inadequada pode degradar compostos valiosos como os canabinoides, reduzindo a eficácia e o valor de mercado da cannabis. Este estudo busca identificar a temperatura ótima de secagem para maximizar a retenção desses compostos. Através de um experimento controlado, comparamos três diferentes temperaturas para determinar qual delas produz o melhor resultado.
+                    </p>
+                </div>
+            </section>
+            
+            <section id="methodology" class="mb-12">
+                 <div class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto">
+                    <h2 class="text-2xl font-bold text-[#3c787e] mb-6 text-center">Delineamento do Experimento</h2>
+                    <div class="flex flex-col md:flex-row items-center justify-center">
+                        <div class="flow-step bg-[#88d4d4] text-white">
+                            <p class="font-semibold">Amostras de Cannabis da mesma espécie</p>
+                        </div>
+                        <div class="arrow">&rarr;</div>
+                        <div class="flow-step bg-[#63a6a6] text-white">
+                            <p class="font-semibold">3 Tratamentos (Temperaturas de Secagem): 45°C, 50°C e 55°C</p>
+                        </div>
+                         <div class="arrow">&rarr;</div>
+                        <div class="flow-step bg-[#3c787e] text-white">
+                            <p class="font-semibold">Análise do Teor de Canabinoides (%)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="results" class="mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2 bg-white rounded-lg shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-[#3c787e] mb-1">Resultados: Teor Médio de Canabinoides</h2>
+                        <p class="text-sm text-gray-600 mb-6">A comparação direta entre os tratamentos revela um pico de rendimento na temperatura intermediária.</p>
+                        <div class="chart-container">
+                            <canvas id="resultsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-[#f3a712] text-white rounded-lg shadow-md p-8 flex flex-col items-center justify-center text-center">
+                        <h3 class="text-2xl font-semibold mb-2">Temperatura Ótima</h3>
+                        <p class="text-7xl font-bold">50°C</p>
+                        <p class="text-xl mt-4">Alcançou o maior teor médio de canabinoides.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="analysis" class="mb-12">
+                 <div class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto">
+                    <h2 class="text-2xl font-bold text-[#3c787e] mb-4">Análise Estatística: A Diferença é Significativa?</h2>
+                    <p class="text-base mb-6">Para garantir que as diferenças observadas não ocorreram por acaso, aplicamos testes estatísticos. Primeiro, a Análise de Variância (ANOVA) confirmou que existe uma diferença significativa entre os grupos (p < 0.05). Em seguida, testes t par-a-par foram realizados para identificar quais tratamentos são diferentes entre si.</p>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border">
+                            <thead>
+                                <tr class="bg-[#3c787e] text-white">
+                                    <th class="py-3 px-4 uppercase font-semibold text-sm text-left">Comparação</th>
+                                    <th class="py-3 px-4 uppercase font-semibold text-sm text-center">P-valor (Teste t)</th>
+                                    <th class="py-3 px-4 uppercase font-semibold text-sm text-left">Conclusão</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr>
+                                    <td class="py-3 px-4 border-b">45°C vs 50°C</td>
+                                    <td class="py-3 px-4 border-b text-center">0.0053</td>
+                                    <td class="py-3 px-4 border-b font-semibold text-green-600">Diferença Significativa</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 border-b">45°C vs 55°C</td>
+                                    <td class="py-3 px-4 border-b text-center">0.0637</td>
+                                    <td class="py-3 px-4 border-b">Não Significativa</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="py-3 px-4 border-b">50°C vs 55°C</td>
+                                    <td class="py-3 px-4 border-b text-center">< 0.0001</td>
+                                    <td class="py-3 px-4 border-b font-semibold text-green-600">Diferença Significativa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                 </div>
+            </section>
+
+             <section id="conclusion">
+                <div class="bg-[#db5461] text-white rounded-lg shadow-md p-8 max-w-4xl mx-auto text-center">
+                    <h2 class="text-2xl font-bold mb-4">Conclusão Final</h2>
+                    <p class="text-lg leading-relaxed">
+                        A temperatura de secagem de **50°C** resultou em um teor de canabinoides estatisticamente superior tanto a 45°C quanto a 55°C. A temperatura de 55°C mostrou uma tendência de degradação dos compostos. Portanto, para esta espécie de cannabis, 50°C é a temperatura recomendada para maximizar a qualidade do produto final.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500 text-sm">
+            <p>Infográfico gerado em Setembro de 2025. Dados simulados para fins ilustrativos.</p>
+        </footer>
+
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    
+    function seededRandom(seed) {
+        let state = seed;
+        return function() {
+            state = (state * 9301 + 49297) % 233280;
+            return state / 233280;
+        };
+    }
+
+    function generateNormal(mean, stdDev, randomFunc) {
+        let u1, u2;
+        do {
+            u1 = randomFunc();
+            u2 = randomFunc();
+        } while (u1 === 0);
+        const z0 = Math.sqrt(-2.0 * Math.log(u1)) * Math.cos(2.0 * Math.PI * u2);
+        return z0 * stdDev + mean;
+    }
+
+    const seed = 42;
+    const random = seededRandom(seed);
+    const numSamples = 10;
+    
+    const data45C = Array.from({ length: numSamples }, () => generateNormal(18.5, 1.5, random));
+    const data50C = Array.from({ length: numSamples }, () => generateNormal(20.5, 1.2, random));
+    const data55C = Array.from({ length: numSamples }, () => generateNormal(17.0, 1.8, random));
+
+    const mean = arr => arr.reduce((a, b) => a + b, 0) / arr.length;
+    const mean45C = mean(data45C);
+    const mean50C = mean(data50C);
+    const mean55C = mean(data55C);
+
+    const wrapLabel = (label, maxWidth) => {
+        if (typeof label !== 'string' || label.length <= maxWidth) {
+            return label;
+        }
+        const words = label.split(' ');
+        let lines = [];
+        let currentLine = '';
+        words.forEach(word => {
+            if ((currentLine + word).length > maxWidth) {
+                lines.push(currentLine.trim());
+                currentLine = '';
+            }
+            currentLine += word + ' ';
+        });
+        lines.push(currentLine.trim());
+        return lines;
+    };
+
+    const ctx = document.getElementById('resultsChart').getContext('2d');
+    const resultsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['45°C', '50°C', '55°C'],
+            datasets: [{
+                label: 'Teor Médio de Canabinoides (%)',
+                data: [mean45C, mean50C, mean55C],
+                backgroundColor: [
+                    '#88d4d4', 
+                    '#f3a712', 
+                    '#db5461'  
+                ],
+                borderColor: [
+                    '#63a6a6',
+                    '#d9900a',
+                    '#c54854'
+                ],
+                borderWidth: 2,
+                borderRadius: 5,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Teor de Canabinoides (%)',
+                        font: {
+                            size: 14,
+                            weight: '600'
+                        },
+                         color: '#3c787e'
+                    }
+                },
+                x: {
+                     title: {
+                        display: true,
+                        text: 'Temperatura de Secagem',
+                         font: {
+                            size: 14,
+                            weight: '600'
+                        },
+                         color: '#3c787e'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    },
+                    backgroundColor: '#3c787e',
+                    titleFont: {
+                        size: 16,
+                        weight: 'bold'
+                    },
+                    bodyFont: {
+                        size: 14
+                    },
+                    padding: 12,
+                    cornerRadius: 8
+                }
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
