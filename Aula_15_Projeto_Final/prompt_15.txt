@@ -1,0 +1,14 @@
+meu perfil:
+* sou aluno na pós-graduação em Engenharia Agrícola de uma Universidade Federal
+* tenho conhecimento básico de Python
+* Uso VSCode para trabalhar com Python
+* estou cursando a disciplina ENG6001 - Introdução à Ciencia de Dados com Python Aplicada à Engenharia Agrícola
+pedido faço:
+*  Realize uma de análise completa de um experimento de secagem de folhas de uma planta medicinal: 
+		a. usar dados simulados de secagem
+		b. o script deverá:
+				1. importar esse dados no formato .csv
+				2. limpar, 
+				3. analisar, 
+				4. visualizar e 
+				5. ajustar modelo com SciPy
