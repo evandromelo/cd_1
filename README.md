@@ -18,5 +18,7 @@ Cada aula contém:
 
 ## 🗂️ Estrutura do Repositório
 
-![alt text](image.png)
+<img width="346" height="793" alt="image" src="https://github.com/user-attachments/assets/9c9d69e7-f717-41f3-8090-fdf6d5d03cfc" />
+
+
 
