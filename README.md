@@ -1,13 +1,9 @@
-# 🌾 Ciência de Dados com Python – Nível Básico  
-### Curso para estudantes de Pós-Graduação em Engenharia Agrícola
+# 🌾 Tutorial resumido: Ciência de Dados com Python – Nível Básico  
+### Para estudantes de Pós-Graduação em Engenharia Agrícola
 
-> "A ciência é a luz que transforma dados em conhecimento." – Adaptado
+## 📚 Sobre o Tutorial
 
----
-
-## 📚 Sobre o Curso
-
-Este repositório acompanha o curso **"Ciência de Dados com Python – Nível Básico"**, desenvolvido especialmente para **estudantes de pós-graduação em Engenharia Agrícola** que desejam aplicar técnicas de análise de dados em suas pesquisas.
+Este repositório destina-se a  **estudantes de pós-graduação em Engenharia Agrícola** que desejam aplicar técnicas de análise de dados em suas pesquisas.
 
 O objetivo é fornecer uma introdução prática ao uso do **Python** para:
 - Tratamento de dados agronômicos
@@ -23,4 +19,5 @@ Cada aula contém:
 ---
 
 ## 🗂️ Estrutura do Repositório
+
 ![alt text](image.png)
