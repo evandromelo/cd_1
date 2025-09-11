@@ -9,15 +9,14 @@ O objetivo é fornecer uma introdução prática ao uso do **Python** para:
 - Tratamento de dados agronômicos
 - Análise exploratória
 - Visualização de resultados
-- Automação de tarefas repetitivas
 
 Cada aula contém:
 - Uma apresentação resumida dos conceitos
-- Exemplos executáveis e comentados
-- Espaço para adaptação às necessidades individuais do aluno
+- Exemplos com os códigos em Python
 
 ---
 
 ## 🗂️ Estrutura do Repositório
 
 ![alt text](image.png)
+
