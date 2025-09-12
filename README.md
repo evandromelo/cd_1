@@ -1,4 +1,4 @@
-# 🌾 Tutorial resumido: Ciência de Dados com Python – Nível Básico  
+# 🌾 Tutorial resumido: Ciência de Dados com Python – Nível Básico - 1 
 ### Para estudantes de Pós-Graduação em Engenharia Agrícola
 
 ## 📚 Sobre o Tutorial
@@ -19,6 +19,7 @@ Cada aula contém:
 ## 🗂️ Estrutura do Repositório
 
 <img width="346" height="793" alt="image" src="https://github.com/user-attachments/assets/9c9d69e7-f717-41f3-8090-fdf6d5d03cfc" />
+
 
 
 
